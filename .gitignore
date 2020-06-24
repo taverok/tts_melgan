@@ -1,0 +1,25 @@
+ 
+# general
+*~
+*.pyc
+\#*\#
+.\#*
+*DS_Store
+out.txt
+TensorflowTTS.egg-info/
+doc/_build
+slurm-*.out
+tmp*
+.eggs/
+.hypothesis/
+.idea
+__pycache__/
+.vscode*
+.nfs*
+.ipynb_checkpoints
+ljspeech
+*.npy
+./*.wav
+
+venv
+.venv
