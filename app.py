@@ -1,5 +1,5 @@
 from scipy.io import wavfile
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, jsonify
 import uuid
 import os
 
@@ -17,6 +17,11 @@ app = Flask(__name__)
 
 if not os.path.exists(save_path):
 	os.makedirs(save_path)
+
+
+@app.route('/', methods=['GET'])
+def health():
+	return {'status': 'OK'}
 
 
 @app.route('/speak/<text>', methods=['GET'])

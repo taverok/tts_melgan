@@ -3,8 +3,9 @@
 - apt installs
 ```
 sudo apt get update
-sudo apt install python3-pip
+sudo apt install python3-pip libsndfile1
 pip3 install gdown
+pip install -U pip
 ```
 
 - clone repo and cd to project directory
@@ -23,5 +24,5 @@ pip3 install -r ./tts_app/requirements.txt
 - run falsk
 ```
 export FLASK_APP=app.py
-flask run
+flask run --host=0.0.0.0 --port=80
 ```
