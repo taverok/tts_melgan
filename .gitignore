@@ -6,7 +6,6 @@
 .\#*
 *DS_Store
 out.txt
-TensorflowTTS.egg-info/
 doc/_build
 slurm-*.out
 tmp*
@@ -19,7 +18,7 @@ __pycache__/
 .ipynb_checkpoints
 ljspeech
 *.npy
-./*.wav
+*.wav
 
 venv
 .venv
